@@ -5,14 +5,14 @@ import java.util.List;
 public class FullCharacter extends Character {
     private List<String> nicknames;
     private String about;
-    private List<Movie> animes;
-    private List<Movie> mangas;
+    private List<InfoCharacter> animes;
+    private List<InfoCharacter> mangas;
 
     public FullCharacter() {
         super();
     }
 
-    public FullCharacter(Integer idCharacter, String url, String imageUrl, String name, String role, List<String> nicknames, String about, List<Movie> animes, List<Movie> mangas) {
+    public FullCharacter(Integer idCharacter, String url, String imageUrl, String name, String role, List<String> nicknames, String about, List<InfoCharacter> animes, List<InfoCharacter> mangas) {
         super(idCharacter, url, imageUrl, name, role);
         this.nicknames = nicknames;
         this.about = about;
@@ -36,19 +36,19 @@ public class FullCharacter extends Character {
         this.about = about;
     }
 
-    public List<Movie> getAnimes() {
+    public List<InfoCharacter> getAnimes() {
         return animes;
     }
 
-    public void setAnimes(List<Movie> animes) {
+    public void setAnimes(List<InfoCharacter> animes) {
         this.animes = animes;
     }
 
-    public List<Movie> getMangas() {
+    public List<InfoCharacter> getMangas() {
         return mangas;
     }
 
-    public void setMangas(List<Movie> mangas) {
+    public void setMangas(List<InfoCharacter> mangas) {
         this.mangas = mangas;
     }
 }
